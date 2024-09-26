@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active" href="#home">Call Center</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="service.html">Service Request</a>
+    </div>
+   
+    <div class = "content">
+           <h2>Service Requests</h2>
+           <p>Manage Service Requests</p>
+              
+            <div class = "gray-border">
+                 <div class="gray-background" style = 'display:flex; flex-direction:row; justify-content: space-between;'>
+                     <h4>Data List-Service Request List</h4>
+                     <a href="form.html"><button  class = "btn-primary">+  Create</button></a>
+                 </div> 
+                 <div style="display:flex;flex-direction:row;justify-content:space-between; margin:20px 0px">
+                    <div>
+                    
+                    <select id="rowsPerPage">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                    </select>
+                    <label for="rowsPerPage">Rows per page:</label>
+                 </div>
+                   <input type="search">
+                 </div>
+           
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Priority</th>
+                <th>Problem Summary</th>
+                <th>Status</th>
+                <th>Customer</th>
+                <th>Acc. No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+    <div id="pagination">
+        <button id="prevBtn">Previous</button>
+        <span id="pageNumbers"></span> <!-- Page numbers will be inserted here -->
+        <button id="lastBtn">Last</button>
+       
+    </div>
+</div>
+    <!-- footer -->
+    <footer>
+        <p class="gray">Copyright &copy; Reserved By M.Srinivas, 2024</p>
+    </footer>
+</div>
+    <script src="assets/js/script1.js"></script>
+</body>
+</html>

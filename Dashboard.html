@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Timeline Workflow</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active" href="#home">Call Center</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="service.html">Service Request</a>
+    </div>
+      
+    <div class="content">
+        <div>
+            <h2>Dashboard</h2>
+            <p class="gray">Data Analytics and Report Visualization</p>
+        </div>
+
+        <!-- Service Containers -->
+        <div class="service-container">
+            <div class="service-card card1">
+                <p>Service Requests Approved</p>
+                <p>12</p>
+            </div>
+            <div class="service-card card2">
+                <p>Service Requests Pending</p>
+                <p>20</p>
+            </div>
+            <div class="service-card card3">
+                <p>Service Requests Open</p>
+                <p>10</p>
+            </div>
+            <div class="service-card card4">
+                <p>Service Requests Resolved</p>
+                <p>8</p>
+            </div>
+        </div>
+
+        <!-- Chart Containers -->
+        <div class="chart-containers">
+            <div class="gray-border">
+                <h4 class="gray-background"> Data Area Graph - Daily Service Requests</h4>
+                <canvas id="areaChart" width="600" height="350"></canvas>
+            </div>
+            <div class="gray-border">
+                <h4 class="gray-background">Data Bar Graph - Monthly Service Requests</h4>
+                <canvas id="columnChart" width="600" height="350"></canvas>
+            </div>
+        </div>
+        
+         <!--Word Cloud - Our customers around the world-->
+         <div class = "customers-container gray-border">
+               <h4 class="gray-background">Word Cloud - Our customers around the world</h4>
+               <iframe src="wordCloud.html" width="100%" height="400" frameborder="0"></iframe>
+               
+         </div>
+
+        <!-- Timeline - Service Request Workflow Process -->
+        <div class="workflow-container gray-border">
+            <h4 class="gray-background">Timeline - Service Request Workflow Process</h4>
+
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>Step 1: Planning & Requirement Gathering</h3>
+                        <p>Identify project objectives, gather requirements, and allocate resources.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Step 2: Design</h3>
+                        <p>Develop initial designs and wireframes for project layout.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>Step 3: Development</h3>
+                        <p>Build the core features and functionality of the project.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Step 4: Testing</h3>
+                        <p>Test the project across different platforms and fix any bugs.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>Step 5: Review & Improvements</h3>
+                        <p>Review the project and implement necessary improvements.</p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Step 6: Deployment</h3>
+                        <p>Deploy the final product to the live environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <p class="gray">Copyright &copy; Reserved By M.Srinivas, 2024</p>
+        </footer>
+    </div>   
+  
+    <script src="assets/js/script.js"></script>
+    
+
+</body>
+</html>
